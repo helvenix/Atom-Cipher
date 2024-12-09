@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 // CSS
 import './css/App.css'
+import './css/accessGate.css'
 
 function checkAccess(accessInput, setAccessInput, setAccess){
     if (accessInput == import.meta.env.VITE_ACCESS_KEY){
@@ -29,15 +30,15 @@ function App() {
             (
                 <>
                     <div id="accessGate">
-                        <h1>Enter Access Key</h1>
                         <input 
-                            type="text" 
+                            type="password" 
                             id="accessInput" 
                             value={accessInput} 
                             autoComplete="off" 
                             onChange={e => setAccessInput(e.target.value)}
                             onKeyDown={e => e.key == "Enter" ? checkAccess(accessInput, setAccessInput, setAccess) : null}
                         />
+                        <h1>Enter Access Key</h1>
                         <button
                             id="accessSubmit"
                             onClick={() => checkAccess(accessInput, setAccessInput, setAccess)}

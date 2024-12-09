@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Versanity';
+    src: url(../assets/font/Versanity.ttf);
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(../assets/font/Lora.ttf);
+}
+
+::selection{
+    background-color: #E0C9AF;
+    color: #2E2834;
+}

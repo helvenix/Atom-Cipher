@@ -1,0 +1,114 @@
+#accessGate {
+    width: 72vh; height: 24vh;
+    /* background-color: #B07DD6; */
+    position: absolute;
+    top: calc(50% - 24vh/2); left: calc(50% - 72vh/2);
+    border-radius: 12px;
+    /* box-shadow: 0 0 36px #564864; */
+}
+
+#accessGate>h1 {
+    font-size: 3vh;
+    font-family: 'Lora';
+    color: #E0C9AF;
+    line-height: 6vh;
+    text-align: center;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+#accessGate>#accessInput {
+    width: 36vh; height: 4vh; background-color: transparent;
+    box-sizing: border-box; border: 0; border-bottom: 2px dotted #E0C9AF;
+    color: #E0C9AF; 
+    text-align: center;
+    position: absolute; top: 12vh; left: calc(50% - 36vh/2);
+    transition: .2s ease-in-out;
+}
+
+#accessGate>#accessInput::selection {
+    background-color: #B07DD6;
+}
+
+#accessGate>#accessInput:focus {
+    outline: none; border-bottom-style: solid;
+    border-color: #B07DD6; color: #B07DD6;
+}
+
+#accessGate>#accessInput:focus + h1{
+    color: #B07DD6;
+}
+
+#accessGate>#accessInput:focus ~ #accessSubmit{
+    border-color: #B07DD6;
+    color: #B07DD6;
+}
+#accessGate>#accessInput:focus ~ #accessSubmit .bg1{
+    background-color: #E0C9AF;
+}
+#accessGate>#accessInput:focus ~ #accessSubmit .bg2{
+    background-color: #B07DD6;
+}
+#accessGate>#accessInput:focus ~ #accessSubmit:active{
+    transition: 0s 0s;
+    border-color: #B07DD6;
+}
+#accessGate>#accessInput:focus ~ #accessSubmit:active .bg2{
+    transition: 0s 0s;
+    background-color: #B07DD6;
+}
+
+#accessGate>#accessSubmit { 
+    display: flex; justify-content: center; align-items: center;
+    position: absolute; font-size: 1.4vh; user-select: none;
+    color: #E0C9AF; left: calc(50% - 6vh); cursor: pointer; 
+    height: 3.6vh; width: 12vh; border: 2px solid #E0C9AF; box-sizing: border-box;
+    background-color: transparent; top: 18vh;
+    transition: .2s ease-in-out;  
+}
+
+#accessGate>#accessSubmit h1{
+    transition: .1s ease;
+    position: relative; z-index: 1;
+}
+
+#accessGate>#accessSubmit .bg1{
+    background-color: #B07DD6; position: absolute; top: 0; left: 50%;
+    width: 0; height: 100%; transition: .15s ease-in-out .15s;
+}
+
+#accessGate>#accessSubmit .bg2 {
+    background-color: #E0C9AF; position: absolute; top: 0; left: 50%;
+    width: 0; height: 100%; transition: .15s ease;
+}
+
+#accessGate>#accessSubmit:hover {
+    margin-bottom: -0.4vh;
+    height: 4vh; width: 36vh; top: 17.8vh; left: calc(50% - 36vh/2);
+    transition-duration: .3s;
+}
+
+#accessGate>#accessSubmit:hover h1 {
+    color: #2E2834;
+}
+
+#accessGate>#accessSubmit:hover .bg1{
+    width: 100%;
+    left: 0;
+    transition: .3s 0s;
+}
+#accessGate>#accessSubmit:hover .bg2{
+    width: 100%;
+    left: 0;
+    transition: .3s .3s;
+}
+
+#accessGate>#accessSubmit:active{
+    transition: 0s 0s;
+    border-color: #B07DD6;
+}
+#accessGate>#accessSubmit:active .bg2{
+    transition: 0s 0s;
+    background-color: #B07DD6;
+}
+
