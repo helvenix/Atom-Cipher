@@ -20,8 +20,8 @@
 #accessGate>#accessInput {
     width: 36vh; height: 4vh; background-color: transparent;
     box-sizing: border-box; border: 0; border-bottom: 2px dotted #E0C9AF;
-    color: #E0C9AF; 
-    text-align: center;
+    color: #E0C9AF; font-size: 2vh;
+    text-align: center; padding: 0 12px;
     position: absolute; top: 12vh; left: calc(50% - 36vh/2);
     transition: .2s ease-in-out;
 }
@@ -64,10 +64,12 @@
     color: #E0C9AF; left: calc(50% - 6vh); cursor: pointer; 
     height: 3.6vh; width: 12vh; border: 2px solid #E0C9AF; box-sizing: border-box;
     background-color: transparent; top: 18vh;
-    transition: .2s ease-in-out;  
+    transition: .2s ease-in-out; 
 }
 
 #accessGate>#accessSubmit h1{
+    font-family: 'Versanity';
+    font-weight: 600;
     transition: .1s ease;
     position: relative; z-index: 1;
 }
